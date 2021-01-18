@@ -217,9 +217,8 @@ class Travel {
     planView() {
     	// コンソール出力
         console.log("- Run planView");
-        // テーブルの内容をplanに変更する
-        console.log(this.plan);
-
+        
+        // HTMLテーブルの内容をplanの内容と同様にする
         let plan_html = '';
         this.plan.forEach(function(place){
         	plan_html +=
@@ -232,9 +231,8 @@ class Travel {
 	            '<td>' + place.AST + '</td>' +
 	            '</tr>';
 		})
-        
 
-        console.log(plan_html);
+        // HTML書き換え
         $('#ResultTableBody').html(plan_html);
     }
 
