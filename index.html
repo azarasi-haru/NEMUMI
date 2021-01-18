@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/Travel.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>PLANNER - NEMUMI</title>
+</head>
+
+<body>
+    <header class="text-center text-light bg-primary">
+        <h1 class="display-4 font-weight-bold">PLANNER</h1>
+        <p class="font-weight-bold">旅行プランを自動で提案</p>
+        <hr>
+    </header>
+    
+    <main class="text-center" style="display: none;">
+        <div class="container">
+            <!-- 入力欄 -->
+            <form class="text-center" id="Form">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea">
+                        <div class="font-weight-bold">どんな旅行？</div>
+                        <div class="text-secondary">出発・帰省時間、行きたい場所、求める優先度(評価・料金等)</div>
+                    </label>
+                    <textarea class="form-control" id="FormControlTextarea" rows="4">10:00出発で、17:00にはホテルに帰りたい！浜松城、浜名湖パルパル、ぬくもりの森に行きたいな～！評価の高いところを優先的に！</textarea>
+                </div>
+            </form>
+            <!-- ボタン -->
+            <button type="button" id="GenerateButton" class="btn btn-primary btn-lg font-weight-bold">
+                旅行プランを作成
+            </button>
+            <!-- 出力 -->
+            <table class="table" id="ResultTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th scope="col">コース順</th>
+                        <th scope="col">時間</th>
+                        <th scope="col">地名</th>
+                        <th scope="col">評価</th>
+                        <th scope="col">料金</th>
+                        <th scope="col">平均滞在時間</th>
+                    </tr>
+                </thead>
+                <tbody id="ResultTableBody">
+                    
+                </tbody>
+            </table>
+            <!-- ボタン -->
+            <button type="button" id="BackButton" class="btn btn-danger btn-lg font-weight-bold" style="display: none;">
+                戻る
+            </button>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p class="mt-5 mb-3 text-muted">©2021 NEMUMI</p>
+    </footer>
+</body>
+
+</html>
