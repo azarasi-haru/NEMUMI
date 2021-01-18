@@ -223,9 +223,9 @@ class Travel {
         this.plan.forEach(function(place){
         	plan_html +=
 	            '<tr>' +
-	            '<th scope="row">' + place.turn + '</th>' +
-	            '<th scope="row">' + place.time + '</th>' +
-	            '<th scope="row">' + place.name + '</th>' +
+	            '<td>' + place.turn + '</td>' +
+	            '<td>' + place.time + '</td>' +
+	            '<td>' + place.name + '</td>' +
 	            '<td>' + place.evalution + '</td>' +
 	            '<td>' + place.fee + '</td>' +
 	            '<td>' + place.AST + '</td>' +
