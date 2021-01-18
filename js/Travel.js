@@ -227,7 +227,7 @@ class Travel {
 	            '<td>' + place.time + '</td>' +
 	            '<td>' + place.name + '</td>' +
 	            '<td>' + place.evalution + '</td>' +
-	            '<td>' + place.fee + '</td>' +
+	            '<td>' + place.fee + '円</td>' +
 	            '<td>' + place.AST + '</td>' +
 	            '</tr>';
 		})
