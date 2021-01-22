@@ -11,24 +11,24 @@
         "name": "浜名湖パルパル",
         "evalution": 3.9,
         "AST": 4.5,
-        "fee": 0,
-        "longitude": 0.0000,
-        "latitude": 0.0000
+        "fee": 5000,
+        "longitude": 34.7633524,
+        "latitude": 137.614666
     },
     {
         "name": "ぬくもりの森",
         "evalution": 3.0,
         "AST": 2.5,
-        "fee": 0,
-        "longitude": 0.0000,
-        "latitude": 0.0000
+        "fee": 4000,
+        "longitude": 34.7653505,
+        "latitude": 137.6551184
     },
     {
         "name": "竜ヶ岩洞",
         "evalution": 4.0,
         "AST": 1.5,
-        "fee": 0,
-        "longitude": 0.0000,
-        "latitude": 0.0000
+        "fee": 1000,
+        "longitude": 34.8451752,
+        "latitude": 137.6466649
     }
 ]
