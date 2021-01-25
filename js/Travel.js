@@ -86,17 +86,49 @@ class Travel {
         // jsonデータ
         let db_copy = this.db;
         console.log(db_copy);
+        console.log(db_copy[0].name);
+
+        let place_list = this.place_list;
 
         // ユーザの入力とjsonデータ(DB)を比較して、place_list(json)を作成
+        for (let i = 0; i < db_copy.length; i++) {
+            if (0 == i) {
+                place_list = "[";
+            }
+            if (wordMatch(db_copy[i].name)) {
+                let name = db_copy[i].name;
+                let evalution = db_copy[i].evalution;
+                let AST = db_copy[i].AST;
+                let fee = db_copy[i].fee;
+                let longitude = db_copy[i].longitude;
+                let latitude = db_copy[i].latitude;
+                var addData = '{ "name":"' + name + '", "evalution":' + evalution + ', "AST":' + AST + ', "fee":' + fee + ', "longitude":' + longitude + ', "latitude":' + latitude + ' }';
+                if (0 < i) {
+                    place_list += "," + addData;
+                } else {
+                    place_list += addData;
+                }
+            }
 
-        /* 
+            if (i == db_copy.length - 1 ) {
+                place_list += "]";
+            }
 
-        // ここを編集
-        this.place_list = result;
+        }
 
-        */
+        function wordMatch(name) {
+            if (input.indexOf(name) != -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        this.place_list = JSON.parse(place_list);
 
         // ダミー結果
+        
+        /*
         let result = [{
                 "name": "浜松城",
                 "evalution": 3.7,
@@ -122,9 +154,9 @@ class Travel {
                 "latitude": 0.0000,
             }
         ];
+        */
 
         // 結果をplace_listに出力
-        this.place_list = result;
 
         /*	結果例 place_list 形式(json)
 			[
@@ -215,22 +247,22 @@ class Travel {
     }
 
     planView() {
-    	// コンソール出力
+        // コンソール出力
         console.log("- Run planView");
-        
+
         // HTMLテーブルの内容をplanの内容と同様にする
         let plan_html = '';
-        this.plan.forEach(function(place){
-        	plan_html +=
-	            '<tr>' +
-	            '<td>' + place.turn + '</td>' +
-	            '<td>' + place.time + '</td>' +
-	            '<td>' + place.name + '</td>' +
-	            '<td>' + place.evalution + '</td>' +
-	            '<td>￥' + place.fee + '</td>' +
-	            '<td>' + place.AST + '</td>' +
-	            '</tr>';
-		})
+        this.plan.forEach(function(place) {
+            plan_html +=
+                '<tr>' +
+                '<td>' + place.turn + '</td>' +
+                '<td>' + place.time + '</td>' +
+                '<td>' + place.name + '</td>' +
+                '<td>' + place.evalution + '</td>' +
+                '<td>￥' + place.fee + '</td>' +
+                '<td>' + place.AST + '</td>' +
+                '</tr>';
+        })
 
         // HTML書き換え
         $('#ResultTableBody').html(plan_html);
