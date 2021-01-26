@@ -19,7 +19,7 @@
         "name": "ぬくもりの森",
         "evalution": 3.0,
         "AST": 2.5,
-        "fee": 4000,
+        "fee": 1000,
         "longitude": 34.7653505,
         "latitude": 137.6551184
     },
@@ -30,5 +30,109 @@
         "fee": 1000,
         "longitude": 34.8451752,
         "latitude": 137.6466649
+    },
+    {
+        "name": "浜松市動物園",
+        "evalution": 4.0,
+        "AST": 2.0,
+        "fee": 410,
+        "longitude": 34.7658875,
+        "latitude":137.6314991
+    },
+    {
+        "name": "中田島砂丘",
+        "evalution": 4.0,
+        "AST": 1.0,
+        "fee": 0,
+        "longitude": 34.6609196,
+        "latitude":137.7257903
+    },
+    {
+        "name": "エアパーク航空自衛隊浜松広報館",
+        "evalution": 4.3,
+        "AST": 2.0,
+        "fee": 0,
+        "longitude": 34.7475412,
+        "latitude":137.7098841
+    },
+    {
+        "name": "浜松市楽器博物館",
+        "evalution": 4.1,
+        "AST": 1.5,
+        "fee": 800,
+        "longitude": 34.7066257,
+        "latitude":137.7363646
+    },
+    {
+        "name": "うなぎパイファクトリー",
+        "evalution": 4.0,
+        "AST": 2.0,
+        "fee": 0,
+        "longitude": 34.7149437,
+        "latitude":137.654338
+    },
+    {
+        "name": "浜松科学館",
+        "evalution": 4.1,
+        "AST": 1.5,
+        "fee": 1100,
+        "longitude": 34.7049894,
+        "latitude":137.737667
+    },
+    {
+        "name": "はままつフルーツパーク時之栖",
+        "evalution": 3.9,
+        "AST": 2.0,
+        "fee": 700,
+        "longitude": 34.8405294,
+        "latitude":137.7336477
+    },
+    {
+        "name": "浜名湖ガーデンパーク",
+        "evalution": 4.1,
+        "AST": 1.5,
+        "fee": 300,
+        "longitude": 34.7142105,
+        "latitude":137.6002788
+    },
+    {
+        "name": "浜名湖オルゴールミュージアム",
+        "evalution": 4.0,
+        "AST": 1.0,
+        "fee": 640,
+        "longitude": 34.7700174,
+        "latitude":137.6181363
+    },
+    {
+        "name": "浜松駅",
+        "evalution": 5.0,
+        "AST": 0.0,
+        "fee": 0,
+        "longitude": 34.7041754,
+        "latitude":137.7322757
+    },
+    {
+        "name": "浜北森林アスレチック",
+        "evalution": 4.1,
+        "AST": 2.5,
+        "fee": 1600,
+        "longitude": 34.8412087,
+        "latitude":137.7760811
+    },
+    {
+        "name": "スズキ歴史館",
+        "evalution": 4.1,
+        "AST": 1.0,
+        "fee": 0,
+        "longitude": 34.6906701,
+        "latitude":137.6873725
+    },
+    {
+        "name": "弁天島海浜公園",
+        "evalution": 3.8,
+        "AST": 1.0,
+        "fee": 0,
+        "longitude": 34.6889569,
+        "latitude":137.6001626
     }
 ]
