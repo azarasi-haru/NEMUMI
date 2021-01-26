@@ -24,6 +24,7 @@ $(function() {
             dataType: 'json',
             success: function(json) {
                 const json_data = json;
+                console.log(json);
 
                 // クラスをインスタンス化
                 let travel = new Travel(user_input, json_data);
